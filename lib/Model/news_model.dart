@@ -103,7 +103,7 @@ List<Yournews> newsItems = [
     description:"The term world can have different meanings depending on the context in which it is used:Planet Earth: In a literal sense, world refers to the planet we inhabit, including its land, oceans, atmosphere, and all living organisms.",
     newsImage: "Images/world news.png",
     image: "Images/world image.png",
-    newsTitle: "Whats your openion about the world",
+    newsTitle: "Whats your opinion about the world",
     newsCategories: "WORLD",
     date: 'Saturday 29 Nov 1101',
     time: '∞',

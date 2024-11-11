@@ -62,10 +62,10 @@ class NewsHomePage extends StatelessWidget {
                     shrinkWrap: true,
                     scrollDirection: Axis.horizontal,
                     itemCount: topicItems
-                        .sublist(0, 3)
-                        .length, // we need only  first three items from model
+                        .sublist(0, 4)
+                        .length, // we need only  first four items from model
                     itemBuilder: (context, index) {
-                      final topic = topicItems.sublist(0, 3)[index];
+                      final topic = topicItems.sublist(0, 4)[index];
                       return Container(
                         margin: const EdgeInsets.only(right: 10),
                         height: 55,
@@ -102,10 +102,10 @@ class NewsHomePage extends StatelessWidget {
                   shrinkWrap: true,
                   scrollDirection: Axis.horizontal,
                   itemCount: topicItems
-                      .sublist(3)
+                      .sublist(4)
                       .length, // we need only remaining  items from model
                   itemBuilder: (context, index) {
-                    final topic = topicItems.sublist(3)[index];
+                    final topic = topicItems.sublist(4)[index];
                     return Container(
                       margin: const EdgeInsets.only(right: 10),
                       height: 55,
