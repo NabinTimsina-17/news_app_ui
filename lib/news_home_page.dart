@@ -12,7 +12,7 @@ class NewsHomePage extends StatelessWidget {
         child: Padding(
           padding: const EdgeInsets.only(left: 20),
           child: ListView(
-            // crossAxisAlignment: CrossAxisAlignment.start,
+            scrollDirection: Axis.vertical,
             children: [
               const Text(
                 "Explore",
