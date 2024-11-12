@@ -6,9 +6,9 @@ class HotTopic {
   Color color;
 
   HotTopic({
-    required this.color,
     required this.image,
     required this.name,
+    required this.color,
   });
 }
 
@@ -43,6 +43,7 @@ List<HotTopic> topicItems = [
     image: "Images/fashion.png",
     name: 'Fashion',
   ),
+  
 ];
 
 // model for your news

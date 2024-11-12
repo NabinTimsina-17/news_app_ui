@@ -59,11 +59,11 @@ class NewsHomePage extends StatelessWidget {
                 height: 55,
                 width: MediaQuery.of(context).size.width,
                 child: ListView.builder(
-                    shrinkWrap: true,
+                    shrinkWrap: false,
                     scrollDirection: Axis.horizontal,
                     itemCount: topicItems
                         .sublist(0, 4)
-                        .length, // we need only  first four items from model
+                        .length, 
                     itemBuilder: (context, index) {
                       final topic = topicItems.sublist(0, 4)[index];
                       return Container(
@@ -102,8 +102,7 @@ class NewsHomePage extends StatelessWidget {
                   shrinkWrap: true,
                   scrollDirection: Axis.horizontal,
                   itemCount: topicItems
-                      .sublist(4)
-                      .length, // we need only remaining  items from model
+                      .sublist(4).length, 
                   itemBuilder: (context, index) {
                     final topic = topicItems.sublist(4)[index];
                     return Container(
@@ -126,7 +125,7 @@ class NewsHomePage extends StatelessWidget {
                                 fontWeight: FontWeight.bold,
                                 fontSize: 20,
                                 color: Colors.white),
-                          )
+                          ),
                         ],
                       ),
                     );
@@ -177,7 +176,7 @@ class NewsHomePage extends StatelessWidget {
                           padding: const EdgeInsets.only(bottom: 10, right: 20),
                           child: Material(
                             borderRadius: BorderRadius.circular(20),
-                            elevation: 1,
+                            elevation: 8,
                             child: Row(
                               children: [
                                 Padding(
@@ -299,7 +298,8 @@ class NewsHomePage extends StatelessWidget {
         height: 55,
         decoration: BoxDecoration(
             color: const Color.fromARGB(31, 151, 146, 146),
-            borderRadius: BorderRadius.circular(20)),
+            borderRadius: BorderRadius.circular(20),
+        ),
         child: const Center(
           child: TextField(
             decoration: InputDecoration(
